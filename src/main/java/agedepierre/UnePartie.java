@@ -21,7 +21,7 @@ public class UnePartie {
     public UnePartie() {
         joueur = new Joueur();
         inventaireDuJoueur = new Inventaire();
-        zone = new Zone();
+        zone = new Zone(2);
 
     }
 

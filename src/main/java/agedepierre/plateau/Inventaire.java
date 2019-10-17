@@ -44,7 +44,6 @@ public class Inventaire {
     }
 
     public boolean ouvrierDispo() {
-		System.out.println("nbDispo = "+nbDispo);
         return (nbDispo > 0);
     }
 	
@@ -54,5 +53,9 @@ public class Inventaire {
 
     public void retirerOuvrierDispo(int i) {
         nbDispo = nbDispo - i;
+    }
+
+    public void ajouterOuvrierDispo(int nbOuvriersRetirés) {
+        nbDispo = nbDispo + nbOuvriersRetirés;
     }
 }

@@ -22,11 +22,11 @@ class JoueurTest {
     void setUp() {
         listeUneZone = new ArrayList<>();
         listeZones = new ArrayList<>();
-        zoneDeLOracle = new Zone();
+        zoneDeLOracle = new Zone(2);
         listeUneZone.add(zoneDeLOracle);
         listeZones.add(zoneDeLOracle);
         for(int k = 0; k < 5; k++) {
-            listeZones.add(new Zone());
+            listeZones.add(new Zone(2));
         }
         j = new Joueur();
 
