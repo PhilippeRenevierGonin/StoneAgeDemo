@@ -23,7 +23,7 @@ public class Inventaire {
     private int nbDispo = 0;
 
     public Inventaire() {
-        setNbOuvrier(1);
+        setNbOuvrier(5);
         setNbRessource(0);
     }
 
