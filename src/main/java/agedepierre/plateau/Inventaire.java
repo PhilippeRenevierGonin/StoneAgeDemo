@@ -1,6 +1,8 @@
 package agedepierre.plateau;
 
+// résolution du conflit, ici en gardant les deux commentaires
 // un autre commentaire pour faire un conflit
+// un commentaire pour faire un conflit
 public class Inventaire {
 	public static final int NB_INITIAL_OUVRIERS = 5;
 
