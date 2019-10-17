@@ -17,9 +17,12 @@ class ZoneTest {
 
     @Test
     void placerUnOuvrier() {
-        zone.placerOuvrier(inventaire, 1);
-        assertFalse(inventaire.ouvrierDispo());
-
+		for(int i = 1; i < Inventaire.NB_INITIAL_OUVRIERS; i++) {
+			zone.placerOuvrier(inventaire, 1);
+			assertTrue(inventaire.ouvrierDispo());
+		}
+		zone.placerOuvrier(inventaire, 1);
+		assertFalse(inventaire.ouvrierDispo());
     }
 
 

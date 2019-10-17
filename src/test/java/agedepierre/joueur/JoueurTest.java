@@ -1,8 +1,9 @@
 package agedepierre.joueur;
 
-import agedepierre.plateau.Zone;
+import agedepierre.plateau.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
 
 import java.util.ArrayList;
 
@@ -13,8 +14,9 @@ class JoueurTest {
     ArrayList<Zone> listeUneZone ;
     ArrayList<Zone> listeZones ;
     Zone zoneDeLOracle;
-    Réponse oracle;
+    Réponse oracleTous, oracleAucun;
     Joueur j;
+	Inventaire inventaire ;
 
     @BeforeEach
     void setUp() {
@@ -28,17 +30,19 @@ class JoueurTest {
         }
         j = new Joueur();
 
-        oracle = new Réponse(zoneDeLOracle,1);
+        oracleTous = new Réponse(zoneDeLOracle,5);
+        // oracleAucun = new Réponse(zoneDeLOracle,0);
+		inventaire = new Inventaire();
     }
 
     /**
-     * on prend le premier
+     * on prend le premier 
+	 * @TODO à compléter
      */
-    @Test
+	@Test
     void placeOuvrier() {
-        assertEquals(oracle, j.placeOuvrier(listeUneZone, null));
-        assertEquals(oracle, j.placeOuvrier(listeZones, null));
-        assertEquals(null, j.placeOuvrier(null, null));
+        assertEquals(oracleTous, j.placeOuvrier(listeUneZone, inventaire));
+        // assertEquals(oracleAucun, j.placeOuvrier(listeZones, inventaire));
     }
 
     @Test

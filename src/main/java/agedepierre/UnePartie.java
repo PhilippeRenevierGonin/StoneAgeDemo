@@ -70,7 +70,7 @@ public class UnePartie {
             // @todo tester le nombre d'ouvrier
             listeZonesDispo.remove(choix.zone);
             listeZonesJouées.add(choix.zone);
-            choix.zone.placerOuvrier(inventaireDuJoueur, 1);
+            choix.zone.placerOuvrier(inventaireDuJoueur, choix.nbOuvriers);
 
             System.out.println("Le joueur a choisi la zone "+choix.zone+" pour y placer "+choix.nbOuvriers+" ouvrier(s)");
 
