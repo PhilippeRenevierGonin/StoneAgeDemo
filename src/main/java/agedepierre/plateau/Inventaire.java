@@ -1,6 +1,7 @@
 package agedepierre.plateau;
 
 public class Inventaire {
+	public static final int NB_INITIAL_OUVRIERS = 5;
 
     public int getNbOuvrier() {
         return nbOuvrier;
@@ -23,13 +24,15 @@ public class Inventaire {
     private int nbDispo = 0;
 
     public Inventaire() {
-        setNbOuvrier(1);
+        setNbOuvrier(NB_INITIAL_OUVRIERS);
         setNbRessource(0);
+		resetOuvriersDispo();
     }
 
     public Inventaire(Inventaire àCopié) {
         setNbOuvrier(àCopié.getNbOuvrier());
         setNbRessource(àCopié.getNbRessource());
+		resetOuvriersDispo();
     }
 
     public void resetOuvriersDispo() {
@@ -37,7 +40,12 @@ public class Inventaire {
     }
 
     public boolean ouvrierDispo() {
-        return nbDispo > 0;
+		System.out.println("nbDispo = "+nbDispo);
+        return (nbDispo > 0);
+    }
+	
+	public int getNbOuvrierDispo() {
+        return nbDispo;
     }
 
     public void retirerOuvrierDispo(int i) {

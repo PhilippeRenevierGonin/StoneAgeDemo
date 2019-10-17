@@ -15,7 +15,7 @@ class InventaireTest {
 
     @Test public void TestConstructeurVide() {
         assertEquals(0, ref.getNbRessource());
-        assertEquals(1, ref.getNbOuvrier());
+        assertEquals(Inventaire.NB_INITIAL_OUVRIERS, ref.getNbOuvrier());
     }
 
     @Test public void TestConstructeurClone() {
