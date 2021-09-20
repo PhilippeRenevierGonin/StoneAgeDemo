@@ -1,4 +1,4 @@
-# StoneAgeDemo
+# Un début d'itération sur le jeu Stone Age
 demo en cours 2019-20, S5, L3 Info / MI
 
 # 2021-22
