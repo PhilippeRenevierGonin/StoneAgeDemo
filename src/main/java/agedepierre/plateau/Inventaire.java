@@ -10,7 +10,11 @@ public class Inventaire {
         return nbOuvrier;
     }
 
-    public void setNbOuvrier(int nbOuvrier) {
+	/**
+	 * Pour modifier le nombre d'ouvrier d'un joueur à travers son inventaire
+	 * @param nbOuvrier le nouveau nombre d'ouvriers associés à cet inventaire
+	 */
+	public void setNbOuvrier(int nbOuvrier) {
         this.nbOuvrier = nbOuvrier;
     }
 
