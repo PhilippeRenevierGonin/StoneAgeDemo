@@ -132,9 +132,6 @@
 
 
     <dependencies>
-
-
-
         <!-- intégration de JUnit 5 -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -142,8 +139,6 @@
             <version>5.8.0</version>
             <scope>test</scope>
         </dependency>
-
-
 
         <dependency>
             <groupId>org.mockito</groupId>
