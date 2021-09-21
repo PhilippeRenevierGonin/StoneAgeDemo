@@ -5,6 +5,7 @@ package agedepierre.plateau;
 // un commentaire pour faire un conflit
 public class Inventaire {
 	public static final int NB_INITIAL_OUVRIERS = 5;
+    private int niveauAgriculture;
 
     public int getNbOuvrier() {
         return nbOuvrier;
@@ -41,6 +42,7 @@ public class Inventaire {
         setNbOuvrier(àCopié.getNbOuvrier());
         setNbRessource(àCopié.getNbRessource());
 		resetOuvriersDispo();
+        setNiveauAgriculture(0);
     }
 
     public void resetOuvriersDispo() {
@@ -61,5 +63,13 @@ public class Inventaire {
 
     public void ajouterOuvrierDispo(int nbOuvriersRetirés) {
         nbDispo = nbDispo + nbOuvriersRetirés;
+    }
+
+    public void setNiveauAgriculture(int niveauAgriculture) {
+        this.niveauAgriculture = niveauAgriculture;
+    }
+
+    public int getNiveauAgriculture() {
+        return niveauAgriculture;
     }
 }
