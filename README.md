@@ -10,4 +10,4 @@ le jeu utilisé en 2021-22 est Carcasonne (et en plus il y a des évolutions de 
 
 # 2022-22
 
-le jeu utilisé est Azul.
+En L3 MIAGE : le jeu utilisé est Azul, disponible en ligne sur boardgamearena.
