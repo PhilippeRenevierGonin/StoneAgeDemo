@@ -9,5 +9,4 @@ le jeu utilisé en 2021-22 est Carcasonne (et en plus il y a des évolutions de 
 
 
 # 2022-22
-
-le jeu utilisé est Azul. C'est pour la promo 2022-23 des L3 MIASHS parcours MIAGE
+En L3 MIASHS parcours MIAGE promo 2022-23  : le jeu utilisé est Azul, disponible en ligne sur boardgamearena.
