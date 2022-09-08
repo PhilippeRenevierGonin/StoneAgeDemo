@@ -6,3 +6,8 @@ Réutilisé pour deux cours en 2021-22, S1 du M1 Info (rappel de git) et S5, L3 
 
 
 le jeu utilisé en 2021-22 est Carcasonne (et en plus il y a des évolutions de sujet)
+
+
+# 2022-22
+
+le jeu utilisé est Azul.
